@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="futebol.css">
+    <link rel="stylesheet" href="Noticias.css">
     <link rel="stylesheet" href="superior1.css">
     <title>Downtown Esportes</title>
 </head>
@@ -167,84 +167,32 @@
                 <a  href="../home/home.html">Home</a>
             </li>
             <li>
-                <a class="active" >Futebol</a>
+                <a href="../futebol/futebol.html" class="active" >Futebol</a>
             </li>
             <li>
                 <a href="../NBA/basquete.html">Basquete</a>
             </li>
         </ul>
-<!--    O QUE ALTERAR (ALTERAR ABAIXO APOS O DIV CLASS TEXTO )  -->
-<!-- Leyout de noticias-->
-<section>
-    <div class="center2">
-        <div class="noticias-wraper-1">
-            <div class="noticia-destaque">
-                <a href="../futebol/Noticia1.html" style="background-image:url('/futebol/imagem/flamengo-vs-gremio.webp');" class="noticia-destaque-single">
-                </a>
+    <!-- Leyout de noticias-->
+
+        <section>
+           <div  class="noticiaP1">
+                 <img  class="imagem-noticia" src="../futebol/imagem/SaoPauloJames.webp" alt="Imagem" class="imagem" >
             </div>
-            <div class="outras-noticias-1">
-                <div href="" style="background-image:url('/futebol/imagem/evertonaraujo.webp');" class="outra-noticia-1-single">
-                    <h3>Everton Araujo brilha nos minutos finais</h3>
-                </div>
-                <div href="../futebol/Noticia3.html" style="background-image:url('/futebol/imagem/renatogaucho.avif');" href="#" class="outra-noticia-1-single">
-                    <h3>Renato Gaúcho se irrita com repórter após derrota</h3>
-                </div>
-                <div href="" style="background-image:url('/futebol/imagem/cuiabaxfortaleza.webp');" class="outra-noticia-1-single">
-                    <h3>Cuiabá goleia Fortaleza e sai do Z4</h3>
-                </div>
-                <div href="" style="background-image:url('/futebol/imagem/criciumaxbahia.webp');" class="outra-noticia-1-single">
-                    <h3>Bahia arranca empate do Criciúma</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <h1 class="titulo-noticia">São Paulo aguarda a copa america para decidir futuro de James Rodriguez</h1>
+                <h3 class="texto-noticia">Libertado pelo São Paulo, James quer esperar o fim da Copa América e conversou nos últimos dias com o técnico Néstor Lorenzo, da Colômbia. O atleta é um dos homens de confiança dele e este, inclusive, é um dos fatores que fazem com que o meia acredite em boas atuações e numa valorização na competição. O Tricolor também torce por isso.
+                    Ciente de que James Rodríguez está fora dos planos do São Paulo, o Celta de Vigo, 14º colocado na última La Liga, o campeonato espanhol, procurou informações sobre o jogador colombiano. As conversas, porém, são mantidas em estágio inicial.
+                </h3>
+                <h1 class="titulo-noticia">Resumo</h1>
+                <h3 class="texto-noticia">A passagem de James Rodríguez pelo São Paulo está cada vez mais próxima do fim. O Tricolor liberou o jogador para se apresentar à seleção colombiana antes da data exigida para a preparação para a Copa América e aguarda, agora, que ele se valorize e decida seu futuro - muito provavelmente longe do Morumbis. O Celta de Vigo, da Espanha, é uma das opções de destino.</h3>
+        </section>
 
-<!-- noticias em container-->
-
-    <div class="container">
-        <a href="../futebol/Noticia2.html" class="link">
-        <img  class="center" src="../futebol/imagem/fotovasco.avif" alt="Imagem" class="imagem" >
-    </a>
-        <div class="texto">
-           
-            <h3>Medel deve voltar ao time titular do Vasco contra o Palmeiras</h3>
-            <p> Com chances de deixar o clube na segunda janela, zagueiro atuaria na vaga de João Victor na quinta-feira </p>
-        </div>
-    </div>
-    
-
-    <div class="container">
-        <a href="../futebol/Noticia3.html" class="link"><img class="center" src="../futebol/imagem/FluRiquelme.webp" alt="Imagem" class="imagem"></a>
-        
-        <div class="texto">
-            <h3>Joia do Fluminense faz golaço do meio de campo em torneio no Equador</h3>
-            <p> Riquelme Felipe anotou um dos gols que levou o Tricolor para a semifinal da Copa Mitad del Mundo Sub-18</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <a href="../futebol/Noticia4.html" class="link"><img class="center" src="../futebol/imagem/SaoPauloJames.webp" alt="Imagem" class="imagem"></a>
-        
-        <div class="texto">
-            <h3>São Paulo aguarda a copa america para decidir futuro de James Rodriguez</h3>
-            <p>A próxima janela de transferências, que reabre em julho, promete ser movimentada no São Paulo. Além das possíveis chegadas, a diretoria presidida por Julio Casares não descarta vender alguns jogadores da equipe na metade do ano </p>
-        </div>
-    </div>
-
-        <div class="container">
-        <a class="link">
-            <video id="videos_futebol" controls src="videos_futebol/1105839_1080p_Standard_Player_1280x720.mp4" type="video/mp4" loop="loop"> <embed width="500" height="200">
-                <object data="" width="320" height="240"></object>
-                <embed width="500" height="200" src="videos_futebol/1105839_1080p_Standard_Player_1280x720.mp4">
-        </video></a>
-        
-        <div class="texto">
-        </div>
-    </div>
-
+        <form action="/submit-comment" method="POST">
+            <label class="label" for="comment">Qual a sua opinião?</label><br>
+            <textarea id="comment" name="comment" class="comment-box" placeholder="Deixe seu comentário aqui..."></textarea><br>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form> </br>
     <!--     Rodapé  (redes sociais ) -->
-
     <footer>
         <div class="fotherline">
               <div class="card1">

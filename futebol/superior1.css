@@ -13,16 +13,8 @@
     perspective: 1000px;
     font-family: sans-serif;
     margin: 2px;
-    gap: 30px;
-    
-  }
   
-/*  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }*/
+  }
   
   .flip-card-inner {
     display: flex;
@@ -30,7 +22,7 @@
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
-    transform-style: preserve-3d;
+    transform-style:preserve-3d;
     text-decoration: none;  
   }
   
